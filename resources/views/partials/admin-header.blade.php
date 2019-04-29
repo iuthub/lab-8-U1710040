@@ -4,7 +4,8 @@
             <a href="#" class="navbar-brand">Laravel Guide</a>
             <ul class="nav navbar-nav">
                 <li><a href="#">Blog</a></li>
-                <li><a href="{{ route('others.about') }}">About</a></li>
+                <li><a href="#">About</a></li>
+               <li><a href="{{ route('admin.index') }}">Posts</a></li></li>
             </ul>
         </div>
     </div>
