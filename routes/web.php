@@ -12,6 +12,7 @@
 |
 */
 
+<<<<<<< HEAD
   Route::get('/', [
     'uses' => 'PostController@getIndex',
     'as' => 'blog.index'
@@ -44,6 +45,10 @@ Route::group(['prefix' => 'admin'], function() {
         'uses' => 'PostController@postAdminUpdate',
         'as' => 'admin.update'
     ]);
+=======
+Route::get('/', function () {
+    return view('blog.index');
+>>>>>>> fa447230ae34e94aa295d85b2c4350901594e2e9
 });
 Route::post('create', function (\Illuminate\Http\Request $request,
            \Illuminate\Validation\Factory $validator) {
